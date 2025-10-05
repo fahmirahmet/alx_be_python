@@ -36,7 +36,7 @@ class Library:
                 return book.return_book()
         return False
     
-    def list_available_books (self):
+    def list_available_books(self):
         for book in self._books:
             if not book._is_checked_out:
                 print(f"{book.title} by {book.author}")
