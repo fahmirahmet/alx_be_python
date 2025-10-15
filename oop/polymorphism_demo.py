@@ -4,9 +4,9 @@ class Shape:
         pass 
     
     def area(self):
-        pass
+        raise NotImplementedError("Subclasses must implement this method")
     
-class Rectangle:
+class Rectangle (Shape):
     def __init__(self,length, width):
         self.length = length
         self.width = width
@@ -14,7 +14,7 @@ class Rectangle:
     def area (self):
         return self.length * self.width
     
-class Circle:
+class Circle(Shape):
     def __init__(self,radius):
         self.radius = radius
     
